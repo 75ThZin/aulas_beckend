@@ -28,8 +28,4 @@ $boletin = [$Aluno1, $Aluno2, $Aluno3];
         echo $value["nota1"] . " | ";
         echo $value["nota2"] . " | ";
      }
-    
-
-        
-
 ?>
