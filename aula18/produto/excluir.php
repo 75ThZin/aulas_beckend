@@ -12,7 +12,6 @@
 
     //string com o comenado sql para ser executado o BD
     $sql = "DELETE FROM `produto` WHERE  `idproduto`= ?;";
-    echo $sql;
 
     //prepara o sql para ser executado no banco de dados
    $comando = $conexao->prepare($sql);
@@ -26,3 +25,4 @@
    //abre o arquivo form.php
    //header("location: form.php");
     };
+    header("location: form.php");
