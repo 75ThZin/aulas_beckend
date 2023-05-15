@@ -12,7 +12,7 @@
  
 
     //string com o comenado sql para ser executado o BD
-    $sql = "UPDATE produto SET `nome`= ?, `descricao`= ?, `preco`= ? `foto`= ? WHERE `idproduto`= ?;";
+    $sql = "UPDATE produto SET `nome`= ?, `descricao`= ?, `preco`= ?, `foto`= ? WHERE `idproduto`= ?;";
     
 
     //prepara o sql para ser executado no banco de dados
@@ -25,7 +25,7 @@
    $comando->execute();
 };
    //abre o arquivo form.php
-   header("location: form.php");
+   header("location: produtos.php");
 
    
  

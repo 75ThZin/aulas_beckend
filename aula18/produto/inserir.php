@@ -12,7 +12,7 @@
 
     //string com o comenado sql para ser executado o BD
     $sql = "INSERT INTO `produto` ( `nome`, `descricao`, `preco`, `foto`) 
-    VALUES ('?', '?', '?', '?');";
+    VALUES (?, ?, ?, ?);";
     echo $sql;
 
     //prepara o sql para ser executado no banco de dados
@@ -25,5 +25,5 @@
    $comando->execute();
 };
    //abre o arquivo form.php
-   header("location: form.php");
+   header("location: produtos.php");
  
