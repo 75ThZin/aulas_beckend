@@ -29,7 +29,7 @@
    $comando->execute();
 };
    //abre o arquivo form.php
-   header("location: produtos.php");
+   header("location: index.php");
 
    
  

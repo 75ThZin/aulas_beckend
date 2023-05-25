@@ -1,14 +1,8 @@
 <?php require_once "consultar_por_id.php" ?>
+<?php require_once "../template/cabecalho.php"; ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <div class="container">
+
     <h1>Cadastro de Usuario</h1>
     <hr>
     
@@ -18,23 +12,24 @@
     enctype="multipart/form-data"
     >
 
-    <label for="nome">Nome</label><br>
-    <input type="text" name="nome" id="nome" value="<?php echo $usuario['nome'] ??""; ?>"><br>
+    
+    <label for="nome" class="form-label">Nome</label><br>
+    <input class="form-control" type="text" name="nome" id="nome" value="<?php echo $usuario['nome'] ??""; ?>"><br>
     <input type="hidden" name="id" id="id" value="<?php echo $usuario['idusuario'] ??""; ?>">
     
-    <label for="login">login</label><br>
-    <input type='text' name="login" id="login" value="<?php echo $usuario['login'] ?? ""; ?>"><br>
+    <label for="login" class="form-label">login</label><br>
+    <input class="form-control" type='text' name="login" id="login" value="<?php echo $usuario['login'] ?? ""; ?>"><br>
 
-    <label for="senha">senha</label><br>
-    <input type="password" name="senha" id="senha" value="<?php echo $usuario['senha'] ?? ""; ?>"><br>
+    <label for="senha" class="form-label">senha</label><br>
+    <input class="form-control" type="password" name="senha" id="senha" value="<?php echo $usuario['senha'] ?? ""; ?>"><br>
 
-    <label for="foto">Foto</label><br>
-    <input type="file" name="foto" id="foto"><br>
+    <label for="foto" class="form-label">Foto</label><br>
+    <input class="form-control" type="file" name="foto" id="foto"><br>
 
-    <button type="submit">Cadastrar</button><br>
+    <button type="submit" class="btn btn-dark">Cadastrar</button><br>
+
 
     </form>
+</div>
 
-
-</body>
-</html>
+    <?php require_once "../template/rodape.php"; ?>

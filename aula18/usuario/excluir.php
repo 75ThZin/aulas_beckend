@@ -25,4 +25,4 @@
    //abre o arquivo form.php
    //header("location: form.php");
     };
-    header("location: usuarios.php");
+    header("location: index.php");
