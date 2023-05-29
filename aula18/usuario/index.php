@@ -12,7 +12,7 @@
         <a href="form.php" class="btn btn-success">Inserir Usuários <i class="fa-solid fa-plus"></i></a>
     </div>
 
-    <table class="table">
+    <table class="table" id ="#myTable">
   <thead>
     <tr>
       <th scope="col">Nome</th>
