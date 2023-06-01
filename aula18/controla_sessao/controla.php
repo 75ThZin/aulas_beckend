@@ -5,7 +5,7 @@ session_start();
 
 //verifica se existe a variável de sessão chamada usuário
 if(!isset($_SESSION['usuario'])){
-    header("location: ../site/login.php");
+    header("location: ../controla_sessao/form_login.php");
 }
 
 ?>

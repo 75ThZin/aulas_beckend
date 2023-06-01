@@ -1,49 +1,10 @@
 <?php   include_once "../template/cabecalho.php";
-        include_once "../produto/consultar_todos.php" ?>
+        include_once "../template/menu.php"; 
+        include_once "../produto/consultar_todos.php"; ?>
 
 
 
-<!--Menu -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Lojinha da Selma</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       
-      <?php
-      $categorias =[];
-      foreach($produtos as $key => $value): 
-      if(!in_array($value["categoria"], $categorias)):
-        $categorias[] = $value["categoria"];
-      ?>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><?php echo $value["categoria"]; ?></a>
-        </li>
-      
-      
-      <?php 
-      endif;
-      endforeach; ?>
 
-        <li class="nav-item">
-          <a class="nav-link" href="../produto/index.php">
-            Acesso Restrito
-          </a>
-        </li>
-
-
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<!--Final Menu -->
 
 
 <hr>
