@@ -41,10 +41,10 @@ if(isset($_POST['usuario']) and isset($_POST['senha'])){
         
 
     }else{
-        echo "senha incorreta";
+        $erro_login = "senha incorreta";
     }
 }else{
-    echo "não existe usuário com o login informado";
+    $erro_login = "não existe usuário com o login informado";
 }
 
 }

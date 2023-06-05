@@ -3,7 +3,16 @@
 
 
 
-<div class="container">
+
+<div class="container"><br>
+
+<?php
+if(isset($erro_login)): ?>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <?php echo $erro_login; ?>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php endif; ?>
 
     <h1>Controle de Acesso</h1>
     <hr>

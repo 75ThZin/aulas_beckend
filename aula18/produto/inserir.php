@@ -1,4 +1,6 @@
+<?php require_once "../controla_sessao/controla.php"; ?>
 <?php
+
 
     require_once "../conexao.php";
 

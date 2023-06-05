@@ -3,10 +3,13 @@
     require_once "../conexao.php";
 
     //string com o comenado sql para ser executado o BD
-    $sql = "SELECT * FROM `produto` ";
+    $sql = "SELECT * FROM `produto` where categoria like %?%";
 
     //prepara o sql para ser executado no banco de dados
    $comando = $conexao->prepare($sql);
+
+   $categoria = $_GET['categoria']?? "";
+   
 
    //executa o sql - comando do banco de dados
    $comando->execute();
