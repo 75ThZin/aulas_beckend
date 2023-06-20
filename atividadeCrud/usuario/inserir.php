@@ -1,32 +1,28 @@
-<?php require_once "../controla_sessao/controla.php"; ?>
 <?php
+       require_once "../conexao.php";
 
-    require_once "../conexao.php";
-
-    if(isset($_POST['nome']) && isset($_POST['login']) && isset($_POST['senha']))
-    {
-         //inclui arquivo para salvar a foto do upload
-        
+   
     $nome = $_POST["nome"];
-    $login = $_POST["RA"];
-    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
-    $foto = $nome_arquivo; 
+    $RA = $_POST["RA"];
+    $idade = $_POST["idade"];
+    $sexo = $_POST["sexo"];
+    $polo = $_POST["polo"];
  
 
     //string com o comenado sql para ser executado o BD
-    $sql = "INSERT INTO `usuario` ( `nome`, `login`, `senha`, `foto`) 
-    VALUES (?, ?, ?, ?);";
+    $sql = "INSERT INTO `crud_aluno` ( `nome`, `RA`,`idade`, `sexo`,  `polo`) 
+    VALUES (?, ?, ?, ?, ?);";
     echo $sql;
 
     //prepara o sql para ser executado no banco de dados
    $comando = $conexao->prepare($sql);
  
    //adiciona valores nos parametros
-    $comando->bind_param("ssss", $nome, $login, $senha, $foto);
+    $comando->bind_param("siiss", $nome, $RA, $idade, $sexo, $polo);
 
    //executa o sql - comando do banco de dados
    $comando->execute();
-};
+
    //abre o arquivo form.php
    header("location: index.php");
  

@@ -4,7 +4,7 @@ $host = "127.0.0.1";
 
 $user = "root";
 $password = "";
-$database = "escola";
+$database = "trabalho";
 $port = 3306;
 
 //faz a conexao

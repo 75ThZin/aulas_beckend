@@ -8,7 +8,7 @@
     //prepara o sql para ser executado no banco de dados
    $comando = $conexao->prepare($sql);
 
-   $categoria = $_GET['categoria']?? "";
+   $categoria = $_GET['categoria'] ?? "";
    
 
    //executa o sql - comando do banco de dados
