@@ -11,13 +11,13 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link" href="../usuario/index.php">
+          <a class="nav-link" href="../alunos/index.php">
             Lista de Alunos
           </a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="../usuario/form.php">
+          <a class="nav-link" href="../alunos/form.php">
             Cadastro de Aluno
           </a>
         </li>

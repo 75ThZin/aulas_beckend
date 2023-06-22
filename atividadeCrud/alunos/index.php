@@ -9,7 +9,7 @@
     </div>
 
     <div class="text-end">
-        <a href="form.php" class="btn btn-success">Inserir Alunos<i class="fa-solid fa-plus"></i></a>
+        <a href="form.php" class="btn btn-success">Inserir Alunos <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <table class="table" id ="#myTable">
